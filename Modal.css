@@ -1,0 +1,16 @@
+.body-modal-open {
+    overflow: hidden;
+}
+
+.modal-text {
+    margin: 0;
+    padding: 0;
+}
+
+.modal-open {
+    display: flex;
+}
+
+.modal-close {
+    display: none;
+}
