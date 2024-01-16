@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import './Modal.css';
 import propTypes from 'prop-types';
