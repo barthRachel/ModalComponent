@@ -4,7 +4,7 @@
 
 A reusable Modal Component for React.
 
-![Modal Component Screen](modal_component/src/assets/1.png)
+![Modal Component Screen](https://github.com/barthRachel/ModalComponent/blob/main/src/assets/1.png?raw=true)
 
 # Installation
 
