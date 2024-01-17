@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# React Modal Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![npm version](https://badge.fury.io/js/@barthrachel%2Fmodal_component.svg)](https://badge.fury.io/js/@barthrachel%2Fmodal_component)
 
-## Available Scripts
+A reusable Modal Component for React.
 
-In the project directory, you can run:
+![Modal Component Screen](./assets/1.png)
 
-### `npm start`
+# Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can install the [package](https://www.npmjs.com/package/@barthrachel/modal_component) via npm by typing the following command : 
+`npm install @barthrachel/modal_component`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This example shows how to include this default component in your page :
+```
+import React, { useState } from "react";
+import Modal from '@barthrachel/modal_component/dist/Modal';
 
-### `npm test`
+const YourPage = () => {
+    const [openModal, setOpenModal] = useState(false);
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    // Add a change-of-state condition with setOpenModal
 
-### `npm run build`
+    const closeModal = () => {
+        setOpenModal(false)
+    }
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    return(
+        <div>
+            /* The body of your page  */
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+            {
+                openModal && (
+                    <Modal 
+                        text={"Your text here"}
+                        isOpen={openModal}
+                        onClose={closeModal}
+                    />
+                )
+            }
+        </div>
+    )
+}
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Configuration
 
-### `npm run eject`
+The default component is described by :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} />`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Modal Component Screen](./assets/2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+By default, the confirmation button is an "Ok" button, but you can change this text with the "buttonText" prop :
 
-## Learn More
+`<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} buttonText={"Your button text"} />`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Modal Component Screen](./assets/3.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#
 
-### Code Splitting
+If, instead of an "Ok" button, you want a close button, you can use the "cross" prop :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} cross />`
 
-### Analyzing the Bundle Size
+![Modal Component Screen](./assets/4.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#
 
-### Making a Progressive Web App
+It's also possible to have both types of button by adding the "button" prop :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} cross button />`
 
-### Advanced Configuration
+![Modal Component Screen](./assets/5.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#
 
-### Deployment
+If you want to change the color of the buttons, you can use the "buttonColor" prop with a string value representing the color in hexadecimal without the # :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+`<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} buttonColor={"5a6f08"} />`
 
-### `npm run build` fails to minify
+![Modal Component Screen](./assets/6.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#
+
+You can change the background color using the "mainBackgroundColor" prop in the same way as the "buttonColor" prop :
+
+`<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} mainBackgroundColor={"5a6f08"} />`
+
+![Modal Component Screen](./assets/7.png)
+
+#
+
+You can change the color of the modal's shadow using the "shadowModalColor" prop in the same way as the "buttonColor" prop :
+
+`<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} shadowModalColor={"FF0000"} />`
+
+![Modal Component Screen](./assets/8.png)
+
+#
+
+This React plugin was created for Project 14 of the "Application Developer - JavaScript React" training course for OpenClassrooms. [You can find the repo linked to this project right here.](https://github.com/barthRachel/hrnet)
