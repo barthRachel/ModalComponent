@@ -4,11 +4,12 @@
 
 A reusable Modal Component for React.
 
-![Modal Component Screen](./assets/1.png)
+![Modal Component Screen](modal_component/src/assets/1.png)
 
 # Installation
 
 You can install the [package](https://www.npmjs.com/package/@barthrachel/modal_component) via npm by typing the following command : 
+
 `npm install @barthrachel/modal_component`
 
 This example shows how to include this default component in your page :
@@ -49,7 +50,7 @@ The default component is described by :
 
 `<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} />`
 
-![Modal Component Screen](./assets/2.png)
+![Modal Component Screen](modal_component/src/assets/2.png)
 
 #
 
@@ -57,7 +58,7 @@ By default, the confirmation button is an "Ok" button, but you can change this t
 
 `<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} buttonText={"Your button text"} />`
 
-![Modal Component Screen](./assets/3.png)
+![Modal Component Screen](modal_component/src/assets/3.png)
 
 #
 
@@ -65,7 +66,7 @@ If, instead of an "Ok" button, you want a close button, you can use the "cross" 
 
 `<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} cross />`
 
-![Modal Component Screen](./assets/4.png)
+![Modal Component Screen](modal_component/src/assets/4.png)
 
 #
 
@@ -73,7 +74,7 @@ It's also possible to have both types of button by adding the "button" prop :
 
 `<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} cross button />`
 
-![Modal Component Screen](./assets/5.png)
+![Modal Component Screen](modal_component/src/assets/5.png)
 
 #
 
@@ -81,7 +82,7 @@ If you want to change the color of the buttons, you can use the "buttonColor" pr
 
 `<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} buttonColor={"5a6f08"} />`
 
-![Modal Component Screen](./assets/6.png)
+![Modal Component Screen](modal_component/src/assets/6.png)
 
 #
 
@@ -89,7 +90,7 @@ You can change the background color using the "mainBackgroundColor" prop in the 
 
 `<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} mainBackgroundColor={"5a6f08"} />`
 
-![Modal Component Screen](./assets/7.png)
+![Modal Component Screen](modal_component/src/assets/7.png)
 
 #
 
@@ -97,7 +98,7 @@ You can change the color of the modal's shadow using the "shadowModalColor" prop
 
 `<Modal text={"Your text here"} isOpen={openModal} onClose={closeModal} shadowModalColor={"FF0000"} />`
 
-![Modal Component Screen](./assets/8.png)
+![Modal Component Screen](modal_component/src/assets/8.png)
 
 #
 
