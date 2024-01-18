@@ -6,6 +6,17 @@ A reusable Modal Component for React.
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/h59e.png)
 
+# Table of contents
+
+- [Installation](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#installation)
+- [Configuration](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#configuration)
+    - [Default modal](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#default-modal)
+    - [Close (cross) button](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#close-cross-button)
+    - [Ok and close (cross) button](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#ok-and-close-cross-button)
+    - [Change button color](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#change-button-color)
+    - [Change background color](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#change-background-color)
+    - [Change shadow color](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#change-shadow-color)
+
 # Installation
 
 You can install the [package](https://www.npmjs.com/package/@barthrachel/modal_component) via npm by typing the following command : 
