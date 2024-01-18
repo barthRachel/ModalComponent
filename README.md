@@ -22,7 +22,9 @@ A reusable Modal Component for React.
 
 You can install the [package](https://www.npmjs.com/package/@barthrachel/modal_component) via npm by typing the following command : 
 
-`npm install @barthrachel/modal_component`
+```bash
+npm install @barthrachel/modal_component
+```
 
 This example shows how to include this default component in your page :
 ```jsx
