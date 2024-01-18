@@ -52,7 +52,7 @@ The default component is described by :
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/plva.png)
 
-#
+## Default Modal
 
 By default, the confirmation button is an "Ok" button, but you can change this text with the "buttonText" prop :
 
@@ -60,7 +60,7 @@ By default, the confirmation button is an "Ok" button, but you can change this t
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/l4tv.png)
 
-#
+## Close (cross) button
 
 If, instead of an "Ok" button, you want a close button, you can use the "cross" prop :
 
@@ -68,7 +68,7 @@ If, instead of an "Ok" button, you want a close button, you can use the "cross" 
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/ak11.png)
 
-#
+## Ok and close (cross) button
 
 It's also possible to have both types of button by adding the "button" prop :
 
@@ -76,7 +76,7 @@ It's also possible to have both types of button by adding the "button" prop :
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/9s8x.png)
 
-#
+## Change button color
 
 If you want to change the color of the buttons, you can use the "buttonColor" prop with a string value representing the color in hexadecimal without the # :
 
@@ -84,7 +84,7 @@ If you want to change the color of the buttons, you can use the "buttonColor" pr
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/e8hh.png)
 
-#
+## Change background color
 
 You can change the background color using the "mainBackgroundColor" prop in the same way as the "buttonColor" prop :
 
@@ -92,7 +92,7 @@ You can change the background color using the "mainBackgroundColor" prop in the 
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/umsc.png)
 
-#
+## Change shadow color
 
 You can change the color of the modal's shadow using the "shadowModalColor" prop in the same way as the "buttonColor" prop :
 
