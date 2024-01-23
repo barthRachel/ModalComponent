@@ -6,6 +6,12 @@ A reusable Modal Component for React.
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/h59e.png)
 
+#
+
+This React plugin was created for Project 14 of the "Application Developer - JavaScript React" training course for OpenClassrooms. [You can find the repo linked to this project right here.](https://github.com/barthRachel/hrnet)
+
+#
+
 # Table of contents
 
 - [Installation](https://github.com/barthRachel/ModalComponent?tab=readme-ov-file#installation)
@@ -129,7 +135,3 @@ You can change the color of the modal's shadow using the "shadowModalColor" prop
 ```
 
 ![Modal Component Screen](https://zupimages.net/up/24/03/j67v.png)
-
-#
-
-This React plugin was created for Project 14 of the "Application Developer - JavaScript React" training course for OpenClassrooms. [You can find the repo linked to this project right here.](https://github.com/barthRachel/hrnet)
